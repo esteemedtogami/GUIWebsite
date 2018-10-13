@@ -1,0 +1,124 @@
+/*
+Programmer: Sam Pickell
+Date: September 28, 2018
+*/
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {
+	display: block;
+}
+body {
+	/* Make the background a gradient, make solid color at bottom, no repeating */
+  background-image: linear-gradient(white, #00569f);
+	background-repeat: no-repeat;
+	background-color: #00569f;
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+	/* Set a fixed minimum width as well as have the body fit 80% of the page */
+	width: 80%;
+	min-width: 600px;
+	margin: auto;
+	margin-bottom: 200px;
+}
+
+header{
+	color: white;
+	background-color: #011330;
+	/* Set a custom banner image only on the right side */
+	background-image: url("sunset.jpg");
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+#wrapper nav{
+	float:left;
+	padding: 8px;
+	/* Set a fixed width */
+	width: 200px;
+
+	/* Couldn't figure out how to make the height variable with the page */
+	height: auto;
+	min-height: 455px;
+	background-color: #8CD7E9;
+	box-sizing: border-box;
+}
+
+#wrapper > nav > ul{
+	padding: 0px;
+	/* Remove list effects */
+	list-style: none;
+	text-decoration: none;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+#wrapper nav a{
+	text-decoration: none;
+}
+
+#content {
+	/* Trying to match the reference image */
+	margin-top: 0px;
+	margin-left: 200px;
+	padding-top: 20px;
+	padding-left: 25px;
+	background-color: white;
+}
+
+#content ul {
+	/* Change bullet design */
+	list-style-image: url("marker.gif");
+
+	/* Make bullets line up with the paragraphs */
+	list-style-position: inside;
+}
+
+#content img{
+	/* Image to the left of the text */
+	float: left;
+	padding-right: 30px;
+}
+
+.resort{
+	/* Emphasis when the name is mentioned */
+	font-size: 18px;
+	color: #3399CC;
+}
+
+nav ul {
+	font-size: 1.2em;
+}
+nav a:visited {
+	color: #344873;
+}
+nav a:hover {
+	color: #FFFFFF;
+}
+h1 {
+	margin-bottom: 0;
+	padding: 10px;
+}
+h2 {
+	color: #3399CC;
+}
+h1,
+h2 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+#contact {
+	font-size: 90%;
+}
+dt {
+	color: #000033;
+}
+footer {
+	/* Make the footer match the refernce image */
+	margin-top: 0px;
+	margin-left: 200px;
+	padding-top: 50px;
+	padding-left: 25px;
+	background-color: white;
+	height: auto;
+	font-family: Georgia, "Times New Roman", serif;
+	font-style: italic;
+}

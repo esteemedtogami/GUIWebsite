@@ -1,0 +1,147 @@
+/*
+  Sam Pickell
+  samuel_pickell@student.uml.edu
+  UMass Lowell CS Student, COMP 4610 GUI I
+  October 4, 2018
+  Assignment 4: Updating webpage with CSS
+  My homepage has now been enchanced with CSS!
+*/
+
+/* Sets up the background of the page */
+body{
+  background-image: linear-gradient(red, #831600);
+	background-repeat: no-repeat;
+  background-color: #831600;
+}
+
+#title{
+  text-align: center;
+}
+
+/* The next three sections set up the nav bar, this part positions and colors
+    the background of the nav bar */
+/* Note: from position to margin below, this code was obtained online from
+    user Vladimir Starkov. See the README for more info and a link to where
+    I found it.*/
+#nav{
+  background-color: #343131;
+  font-size: 20px;
+  text-align: left;
+  width: 820px;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+/* This removes the bullets, and adds some padding to the top and bottom
+    of the list */
+#nav > ul{
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* This makes the elements line up horizontally, add padding to the elements,
+    and make the text a bit bigger */
+#nav > ul > li{
+  display: inline;
+  padding: 5px;
+  font-size: 20px;
+}
+
+/* Centers and colors the background of the About section */
+#about{
+  background-color: #343131;
+  border-radius: 10px;
+  max-width: 800px;
+  padding: 10px;
+  padding-top: 1px;
+  text-align: left;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+/* Adds back the underline for just this section */
+#about > p > a{
+  text-decoration: underline;
+}
+
+/* Positions the Dog section of the page */
+#dog_container{
+  width: 825px;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+/* Sets up the Dog text div, and floats it to the left of the container */
+#dog_text{
+  max-width: 300px;
+  background-color: #343131;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  padding-top: 1px;
+  float: left;
+}
+
+/* Positions the image to the right of the container */
+#dog_image{
+  max-width: 500px;
+  float: right;
+  margin-top: 35px;
+  border-radius: 10px;
+}
+
+/* Increases title font size */
+h1{
+  font-size: 50px;
+}
+
+/* Changes sub-heading color */
+h2{
+  color: #C7C6C6;
+}
+
+/* Changes paragraph color */
+p{
+  color: #C7C6C6;
+}
+
+/* Changes link color and removes decoration */
+a{
+  text-decoration: none;
+  color: #C7C6C6;
+}
+
+/* Set the visited color to be the same as the regular color */
+a:visited{
+  color: #C7C6C6;
+}
+
+/* Text becomes red when hovered over */
+a:hover{
+  color: red;
+}
+
+/* Center and italicize the footer */
+footer{
+  clear: left;
+  text-align: center;
+  font-style: italic;
+}
+
+/* Create some whitespace between the content and footer */
+#my_copywright{
+  margin-top: 500px;
+}
