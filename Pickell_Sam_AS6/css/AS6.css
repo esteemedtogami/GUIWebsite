@@ -1,0 +1,21 @@
+/*
+  Sam Pickell
+  samuel_pickell@student.uml.edu
+  UMass Lowell CS Student, COMP 4610 GUI I
+  November 1, 2018
+  Assignment 6: First JavaScript Program
+  Using JavaScript to make a multiplication table.
+  This is the CSS file.
+*/
+
+body{
+    background-image: linear-gradient(red, #831600);
+  	background-repeat: no-repeat;
+    background-color: #831600;
+    min-height: 800px;
+    min-width: 800px;
+}
+
+#topspace{
+    margin-top: 50px;
+}
