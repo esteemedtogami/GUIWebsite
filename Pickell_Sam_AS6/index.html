@@ -19,6 +19,10 @@
     </head>
     <body>
 
+        <div id="title">
+          <h1>Multiplication Table</h1>
+        </div>
+
     <div id="topspace"> </div>
 
     <!-- This is the form that the user will put their numbers into -->
@@ -26,18 +30,23 @@
         <div class="form-group row left_div">
             <div class="col-lg-8">
             <label for="hor_start">Horizontal Start:</label>
-            <input type="text" class="form-control" id="horizontal_start" aria-describedby="Input" placeholder="1">
+            <input type="text" class="form-control" id="horizontal_start" aria-describedby="Input" placeholder="Enter 1-14">
             <label for="hor_end">Horizontal End:</label>
-            <input type="text" class="form-control" id="horizontal_end" aria-describedby="Input" placeholder="5">
+            <input type="text" class="form-control" id="horizontal_end" aria-describedby="Input" placeholder="Enter 2-15">
             <label for="vert_start">Vertical Start:</label>
-            <input type="text" class="form-control" id="vertical_start" aria-describedby="Input" placeholder="1">
+            <input type="text" class="form-control" id="vertical_start" aria-describedby="Input" placeholder="Enter 1-14">
             <label for="vert_end">Vertical End:</label>
-            <input type="text" class="form-control" id="vertical_end" aria-describedby="Input" placeholder="5">
+            <input type="text" class="form-control" id="vertical_end" aria-describedby="Input" placeholder="Enter 2-15">
             <p></p>
             <button type="button" class="btn btn-primary" onclick="get_numbers()">Submit</button>
             </div>
         </div>
     </form>
+
+    <!-- This is the multiplication table that will be modified with JS -->
+    <div id="mult_tab">
+
+    </div>
 
     <!-- This links the JavaScript file to this HTML file-->
     <script src="js/AS6.js"></script>
