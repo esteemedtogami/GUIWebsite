@@ -1,0 +1,69 @@
+<!--
+  Copyright (C) 2018 Sam Pickell samuel_pickell@student.uml.edu
+  UMass Lowell CS Student, COMP 4610 GUI I
+  November 18, 2018
+  Assignment 7: Update AS6 to have jQuery validation
+-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Sam Pickell Assignment 7</title>
+        <!-- This links the CSS file to this HTML file-->
+        <link rel="stylesheet" href="css/AS7.css"/>
+        <!-- This links Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    </head>
+    <body>
+
+        <div id="title">
+          <h1>Multiplication Table</h1>
+        </div>
+
+    <div id="topspace"> </div>
+
+    <!-- This is the form that the user will put their numbers into -->
+    <form id="input_form" action="" class="form-inline justify-content-center">
+        <div class="form-group row left_div">
+            <div class="col-lg-8">
+            <label for="hor_start">Horizontal Start:</label>
+            <input type="text" class="form-control" id="horizontal_start" aria-describedby="Input" placeholder="Enter 1-14" required>
+            <label for="hor_end">Horizontal End:</label>
+            <input type="text" class="form-control" id="horizontal_end" aria-describedby="Input" placeholder="Enter 2-15" required>
+            <label for="vert_start">Vertical Start:</label>
+            <input type="text" class="form-control" id="vertical_start" aria-describedby="Input" placeholder="Enter 1-14" required>
+            <label for="vert_end">Vertical End:</label>
+            <input type="text" class="form-control" id="vertical_end" aria-describedby="Input" placeholder="Enter 2-15" required>
+            <p></p>
+            <button type="button" class="btn btn-primary" onclick="get_numbers()">Submit</button>
+            </div>
+        </div>
+    </form>
+
+    <!-- This is the multiplication table that will be modified with JS -->
+    <div id="mult_tab">
+
+    </div>
+
+    <!-- This links the JavaScript file to this HTML file-->
+    <script src="js/AS7.js"></script>
+
+    <!-- Scripts needed to use Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!-- Scripts for jQuery-->
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+
+    <script src="js/jquery.validate.js"></script>
+
+    <script type="text/javascript">
+        $("#input_form").validate();
+    </script>
+
+    </body>
+</html>
