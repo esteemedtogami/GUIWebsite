@@ -23,19 +23,19 @@
     <div id="topspace"> </div>
 
     <!-- This is the form that the user will put their numbers into -->
-    <form id="input_form" action="" class="form-inline justify-content-center">
+    <form id="input_form" action="" class="form-inline justify-content-center" method="GET">
         <div class="form-group row left_div">
             <div class="col-lg-8">
             <label for="hor_start">Horizontal Start:</label>
-            <input type="text" class="form-control" id="horizontal_start" aria-describedby="Input" placeholder="Enter 1-14" required>
+            <input type="text" name = "horizontal_start" class="form-control" id="horizontal_start" aria-describedby="Input" placeholder="Enter 1-14" required>
             <label for="hor_end">Horizontal End:</label>
-            <input type="text" class="form-control" id="horizontal_end" aria-describedby="Input" placeholder="Enter 2-15" required>
+            <input type="text" name = "horizontal_end" class="form-control" id="horizontal_end" aria-describedby="Input" placeholder="Enter 2-15" required>
             <label for="vert_start">Vertical Start:</label>
-            <input type="text" class="form-control" id="vertical_start" aria-describedby="Input" placeholder="Enter 1-14" required>
+            <input type="text" name = "vertical_start" class="form-control" id="vertical_start" aria-describedby="Input" placeholder="Enter 1-14" required>
             <label for="vert_end">Vertical End:</label>
-            <input type="text" class="form-control" id="vertical_end" aria-describedby="Input" placeholder="Enter 2-15" required>
+            <input type="text" name = "vertical_end" class="form-control" id="vertical_end" aria-describedby="Input" placeholder="Enter 2-15" required>
             <p></p>
-            <button type="button" class="btn btn-primary" onclick="get_numbers()">Submit</button>
+            <button type="button" id="my_button" class="btn btn-primary" onclick="get_numbers()">Submit</button>
             </div>
         </div>
     </form>
@@ -44,9 +44,6 @@
     <div id="mult_tab">
 
     </div>
-
-    <!-- This links the JavaScript file to this HTML file-->
-    <script src="js/AS7.js"></script>
 
     <!-- Scripts needed to use Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -61,9 +58,8 @@
 
     <script src="js/jquery.validate.js"></script>
 
-    <script type="text/javascript">
-        $("#input_form").validate();
-    </script>
+    <!-- This links the JavaScript file to this HTML file-->
+    <script src="js/AS7.js"></script>
 
     </body>
 </html>
