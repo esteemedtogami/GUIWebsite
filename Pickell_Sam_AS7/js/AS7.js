@@ -4,7 +4,7 @@ UMass Lowell CS Student, COMP 4610 GUI I
 November 18, 2018
 Assignment 7: Update AS6 to have jQuery validation
 */
-int h_start, h_end, v_start, v_end;
+var h_start, h_end, v_start, v_end;
 var my_table;
 
 //check form validity even when button is "button" and not "submit"
