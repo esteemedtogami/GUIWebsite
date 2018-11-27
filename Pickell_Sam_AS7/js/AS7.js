@@ -100,6 +100,7 @@ function get_numbers(){
     v_start = parseInt(document.getElementById('vertical_start').value, 10);
     v_end = parseInt(document.getElementById('vertical_end').value, 10);
 
+
     generate_table();
 
 }
