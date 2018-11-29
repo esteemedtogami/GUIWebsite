@@ -130,7 +130,7 @@ function generate_table(){
         v_end = parseInt(temp2, 10);
     }
 
-    //Actually enforce the range rulesif(h_start < 1 || h_end < 1 || v_start < 1 || v_end < 1 ||
+    //Actually enforce the range rules
     if(h_start < 1 || h_end < 1 || v_start < 1 || v_end < 1 ||
         h_start > 15 || h_end > 15 || v_start > 15 || v_end > 15)
     {
