@@ -110,6 +110,24 @@ function generate_table(){
     //create a variable that will hold the table information
     my_table = "<table>";
 
+    if(h_start > h_end)
+    {
+        var temp;
+
+        temp = parseInt(h_start, 10);
+        h_start = parseInt(h_end, 10);
+        h_end = parseInt(temp, 10);
+    }
+
+    if(v_start > v_end)
+    {
+        var temp2;
+
+        temp2 = parseInt(v_start, 10);
+        v_start = parseInt(v_end, 10);
+        v_end = parseInt(temp2, 10);
+    }
+
     //double for loop to track the vertical and horizontal coordinates
     //   of the table
     for(var i = v_start - 1; i <= v_end; i++)
