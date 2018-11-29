@@ -110,6 +110,8 @@ function generate_table(){
     //create a variable that will hold the table information
     my_table = "<table>";
 
+
+    //Swap the vars if the user made the start smaller than the end
     if(h_start > h_end)
     {
         var temp;
@@ -126,6 +128,13 @@ function generate_table(){
         temp2 = parseInt(v_start, 10);
         v_start = parseInt(v_end, 10);
         v_end = parseInt(temp2, 10);
+    }
+
+    //Actually enforce the range rulesif(h_start < 1 || h_end < 1 || v_start < 1 || v_end < 1 ||
+    if(h_start < 1 || h_end < 1 || v_start < 1 || v_end < 1 ||
+        h_start > 15 || h_end > 15 || v_start > 15 || v_end > 15)
+    {
+        return;
     }
 
     //double for loop to track the vertical and horizontal coordinates
