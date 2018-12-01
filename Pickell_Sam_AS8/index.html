@@ -1,0 +1,106 @@
+<!--
+  Copyright (C) 2018 Sam Pickell samuel_pickell@student.uml.edu
+  UMass Lowell CS Student, COMP 4610 GUI I
+  November 29, 2018
+  Assignment 8: Update AS7 to have sliders and tabs
+-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Sam Pickell Assignment 8</title>
+        <!-- This links the CSS file to this HTML file-->
+        <link rel="stylesheet" href="css/AS8.css"/>
+        <!-- This links Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <!-- This links to the jquery-ui.css file-->
+        <link rel="stylesheet" href="css/jquery-ui.css"/>
+    </head>
+    <body>
+
+        <div id="title">
+          <h1>Multiplication Table</h1>
+        </div>
+
+    <div id="topspace"> </div>
+
+    <!-- This is the form that the user will put their numbers into -->
+    <form id="input_form" action="" class="form-inline justify-content-center" method="GET">
+        <div class="form-group row left_div">
+            <div class="col-lg-8">
+
+                <label for="hor_start">Horizontal Start:</label>
+                <input type="text" name = "horizontal_start" class="form-control" id="horizontal_start" aria-describedby="Input" placeholder="Enter 1-15" value="1" required>
+                <div id="Slider1" class="my_slider">
+                </div>
+
+                <label for="hor_end">Horizontal End:</label>
+                <input type="text" name = "horizontal_end" class="form-control" id="horizontal_end" aria-describedby="Input" placeholder="Enter 1-15" value="1" required>
+                <div id="Slider2" class="my_slider">
+                </div>
+
+                <label for="vert_start">Vertical Start:</label>
+                <input type="text" name = "vertical_start" class="form-control" id="vertical_start" aria-describedby="Input" placeholder="Enter 1-15" value="1" required>
+                <div id="Slider3" class="my_slider">
+                </div>
+
+                <label for="vert_end">Vertical End:</label>
+                <input type="text" name = "vertical_end" class="form-control" id="vertical_end" aria-describedby="Input" placeholder="Enter 1-15" value="1" required>
+                <div id="Slider4" class="my_slider">
+                </div>
+                <p></p>
+                <button type="button" id="my_button" class="btn btn-primary">Save</button>
+            </div>
+        </div>
+    </form>
+
+    <!-- This is the multiplication table that will be modified with JS -->
+    <div id="mult_tab">
+
+    </div>
+
+    <!-- The tabs go here-->
+    <div id="my_tabs">
+        <ul>
+
+        </ul>
+
+    </div>
+
+    <!-- This is how users can delete tabs -->
+    <div id="div_remove">
+    <form id="delete_tabs" action="" class="form-inline justify-content-center" method="GET">
+        <div class="form-group row left_div">
+            <div class="col-lg-8">
+                <button type="button" id="delete_one" class="btn btn-primary">Remove Last</button>
+                <br></br>
+                <button type="button" id="delete_all" class="btn btn-primary">Remove ALL</button>
+            </div>
+        </div>
+    </form>
+    <div>
+
+    <!-- Scripts needed to use Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!-- Scripts for jQuery Validation-->
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+
+    <script src="js/jquery.validate.js"></script>
+
+    <!-- Script for jQuery UI-->
+    <script
+        src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+        integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+        crossorigin="anonymous"></script>
+
+    <!-- This links the JavaScript file to this HTML file-->
+    <script src="js/AS8.js"></script>
+
+    </body>
+</html>

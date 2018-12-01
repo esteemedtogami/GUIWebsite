@@ -1,0 +1,77 @@
+/*
+  Copyright (C) 2018 Sam Pickell samuel_pickell@student.uml.edu
+  UMass Lowell CS Student, COMP 4610 GUI I
+  November 29, 2018
+  Assignment 8: Update AS7 to have sliders and tabs
+*/
+
+body{
+    background-image: linear-gradient(red, #831600);
+  	background-repeat: repeat-x;
+    background-color: #831600;
+    min-height: 2000px;
+    min-width: 800px;
+}
+
+/*Centers the title*/
+#title{
+  text-align: center;
+}
+
+/*Positions the table*/
+#mult_tab{
+    max-width: 850px;
+    position: relative;
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+/*Adds some space to the top of the page*/
+#topspace{
+    margin-top: 50px;
+}
+
+/*Styles the regular elemnts of the table*/
+table, td{
+    margin: auto;
+    table-layout: fixed;
+    width: 50px;
+    border: 1px solid black;
+    text-align: center;
+    background-color: white;
+}
+
+/*Colors the background of the headings*/
+#my_heading{
+    background-color: orange;
+}
+
+/*Customizes the sliders*/
+.my_slider{
+    width: 193px;
+}
+
+/*Customizes the tabs*/
+#my_tabs{
+    max-width: 850px;
+    position: relative;
+    top: 100px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #343131;
+    border: 0px;
+}
+
+#my_tabs .ui-widget-header{
+    background: #CE0802;
+    border: 0px;
+}
+
+#div_remove{
+    margin-top: 200px;
+}
