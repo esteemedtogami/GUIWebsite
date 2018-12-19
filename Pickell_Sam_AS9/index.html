@@ -1,0 +1,107 @@
+<!--
+  Copyright (C) 2018 Sam Pickell samuel_pickell@student.uml.edu
+  UMass Lowell CS Student, COMP 4610 GUI I
+  December 15, 2018
+  Assignment 9: Create a digital version of Scrabble
+-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Sam Pickell Assignment 9</title>
+        <!-- This links the CSS file to this HTML file-->
+        <link rel="stylesheet" href="css/AS9.css"/>
+        <!-- This links Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <!-- This links to the jquery-ui.css file-->
+        <link rel="stylesheet" href="css/jquery-ui.css"/>
+    </head>
+    <body>
+
+        <div id="title">
+          <h1>Scrabble</h1>
+        </div>
+
+        <!-- The board -->
+        <div id="the_board">
+            <div id="droppable1" id="board1" class="container">
+                <img src="images/Board/board1.png"
+                 width = "60"/>
+                 <!--<p> </p>-->
+            </div>
+            <div id="droppable2" id="board2" class="container">
+                <img src="images/Board/board2.png"
+                 width = "60"/>
+            </div>
+            <div id="droppable3" id="board3" class="container">
+                <img src="images/Board/board1.png"
+                 width = "60"/>
+            </div>
+            <div id="droppable4" id="board4" class="container">
+                <img src="images/Board/board1.png"
+                 width = "60"/>
+            </div>
+            <div id="droppable5" id="board5" class="container">
+                <img src="images/Board/board1.png"
+                 width = "60"/>
+            </div>
+            <div id="droppable6" id="board6" class="container">
+                <img src="images/Board/board2.png"
+                 width = "60"/>
+            </div>
+            <div id="droppable7" id="board7" class="container">
+                <img src="images/Board/board1.png"
+                 width = "60"/>
+            </div>
+
+            <!-- Tile Rack -->
+            <div id="tilerack">
+                <img src="images/TileRack/tilerack.png"/>
+            </div>
+
+            <!-- The tiles -->
+            <div id ="tiles">
+            </div>
+        </div>
+
+        <!-- The Scoreboard -->
+        <div id="score_txt">
+            <p>Score: </p>
+        </div>
+        <div id="score_val">
+            <p>0</p>
+        </div>
+
+        <!-- Submit Word and New Hand Buttons -->
+        <div class="my_buttons">
+            <button type="button" id="submit_word" class="btn btn-primary" onclick=submit_hand()>Submit Word</button>
+            <button type="button" id="reroll" class="btn btn-primary" onclick=randomize_letters()>New Hand</button>
+        </div>
+
+
+
+
+        <!-- Scripts needed to use Bootstrap -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+        <!-- Scripts for jQuery Validation-->
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+
+        <script src="js/jquery.validate.js"></script>
+
+        <!-- Script for jQuery UI-->
+        <script
+            src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+            integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+            crossorigin="anonymous"></script>
+
+        <!-- This links the JavaScript file to this HTML file-->
+        <script src="js/AS9.js"></script>
+
+    </body>
+</html>

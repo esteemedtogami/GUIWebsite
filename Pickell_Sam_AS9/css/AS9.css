@@ -1,0 +1,139 @@
+/*
+Copyright (C) 2018 Sam Pickell samuel_pickell@student.uml.edu
+UMass Lowell CS Student, COMP 4610 GUI I
+December 15, 2018
+Assignment 9: Create a digital version of Scrabble
+*/
+
+body{
+    background-image: linear-gradient(red, #831600);
+  	background-repeat: repeat-x;
+    background-color: #831600;
+    min-height: 2000px;
+    min-width: 800px;
+}
+
+/*Centers the title*/
+#title{
+  text-align: center;
+}
+
+/*Edit droppable targets*/
+#the_board{
+    width: 800px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    /*border: 1px solid black;*/
+}
+
+/* Style the tile rack */
+#tilerack{
+    /*border: 1px solid black;*/
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding-left: 50px;
+}
+
+/*Style tiles*/
+#tile1{
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 125px;
+    top: 525px;
+}
+#tile2{
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 200px;
+    top: 525px;
+}
+#tile3{
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 275px;
+    top: 525px;
+}
+#tile4{
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 350px;
+    top: 525px;
+}
+#tile5{
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 425px;
+    top: 525px;
+}
+#tile6{
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 500px;
+    top: 525px;
+}
+#tile7{
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 575px;
+    top: 525px;
+}
+
+/* Position Buttons */
+.my_buttons{
+    /*border: 1px solid black;*/
+    width: 800px;
+    position: relative;
+    bottom: 0;
+    left: 275px;
+    right: 0;
+    margin: auto;
+    padding-top: 5px;
+}
+
+/* Positions board pieces */
+#the_board > .container{
+    padding-left: 360px;
+}
+
+/* Styles Score */
+#score_txt{
+    /*border: 1px solid black;*/
+    width: 800px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding-top: 5px;
+    padding-left: 350px;
+}
+#score_val{
+    /*border: 1px solid black;*/
+    width: 800px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding-top: 5px;
+    padding-left: 375px;
+}
+#score_txt > p{
+    font-size: 24px;
+}
+#score_val > p{
+    font-size: 24px;
+}

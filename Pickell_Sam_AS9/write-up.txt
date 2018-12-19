@@ -1,0 +1,24 @@
+Author: Sam Pickell
+Date: December 19, 2018
+
+Status of items:
+
+
+
+Basic Functionality:
+- Letter tiles appear on the board based on the associative array
+- Tiles can be dragged and dropped
+- The program knows which letter was dropped on which board space
+- There are bonus squares
+- Score is properly calculated
+
+
+Additional Functionality:
+- Any number of words can be played
+- Board is cleared after each round
+- Number of tiles needed to bring the player's hand to 7 is not correct
+- Score is kept for multiple words
+
+
+Extra Credit:
+- None implemented 
